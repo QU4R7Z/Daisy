@@ -3,7 +3,7 @@ import platform
 import time
 
 
-def package(main, company_name, product_version, deploy_dir_name, ico, withconsole, dev):
+def package(main, company_name, product_version, deploy_dir_name, ico, withconsole, plugin_dir, dev):
     try:
         system = platform.system()
         if dev:
@@ -13,23 +13,22 @@ def package(main, company_name, product_version, deploy_dir_name, ico, withconso
                 command = f"python -m nuitka --mingw64 --show-modules --follow-imports --windows-icon-from-ico={ico} " \
                           f"--windows-company-name={company_name} --windows-product-version={product_version} " \
                           f"--output-dir={deploy_dir_name} --verbose --assume-yes-for-downloads " \
-                          f"--enable-plugin=numpy " \
+                          f"--include-plugin-directory={plugin_dir} " \
                           f"{main}"
             else:
                 command = f"python -m nuitka --mingw64 --show-modules --follow-imports --windows-icon-from-ico={ico} " \
                           f"--windows-company-name={company_name} --windows-product-version={product_version} " \
                           f"--output-dir={deploy_dir_name} --verbose --assume-yes-for-downloads " \
                           f"--windows-disable-console " \
-                          f"--enable-plugin=numpy " \
+                          f"--include-plugin-directory={plugin_dir} " \
                           f"{main}"
-            if dev:
-                print(command)
 
             start = time.time()
             subprocess.run(command.split(' '), shell=True, check=True)
             end = time.time()
             if dev:
                 print(f"{end-start}s 사용됨")
+                print(command)
 
         elif system == 'Linux':
             if withconsole:

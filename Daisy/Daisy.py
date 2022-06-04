@@ -151,6 +151,6 @@ class MainWindow(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon("./Resources/daisy.ico"))
+    app.setWindowIcon(QIcon("icon/daisy.ico"))
     window = MainWindow()
     sys.exit(app.exec())
