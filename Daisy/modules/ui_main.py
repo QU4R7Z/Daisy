@@ -596,7 +596,7 @@ class Ui_MainWindow(object):
         self.topLogo.setMinimumSize(QSize(42, 42))
         self.topLogo.setMaximumSize(QSize(42, 42))
         self.topLogo.setStyleSheet(u"background-color: rgb(33, 37, 43);\n"
-"background-image: url(:/icons/images/images/daisy.png);\n"
+"background-image: url(:/images/images/images/daisy.png);\n"
 "background-position: centered;\n"
 "background-repeat: no-repeat;")
         self.topLogo.setFrameShape(QFrame.NoFrame)
@@ -1157,7 +1157,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 303, 226))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 226, 226))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"

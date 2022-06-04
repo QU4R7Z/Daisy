@@ -21,7 +21,7 @@
    <string>MainWindow</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resources.qrc">
+   <iconset>
     <normaloff>:/icons/images/images/daisy.png</normaloff>:/icons/images/images/daisy.png</iconset>
   </property>
   <widget class="QWidget" name="styleSheet">
@@ -664,7 +664,7 @@ Button */
              </property>
              <property name="styleSheet">
               <string notr="true">background-color: rgb(33, 37, 43);
-background-image: url(:/icons/images/images/daisy.png);
+background-image: url(:/images/images/images/daisy.png);
 background-position: centered;
 background-repeat: no-repeat;</string>
              </property>
@@ -2100,7 +2100,7 @@ background-repeat: no-repeat;</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>303</width>
+                                 <width>226</width>
                                  <height>226</height>
                                 </rect>
                                </property>
