@@ -26,7 +26,7 @@ def package(main, company_name, product_version, deploy_dir_name, ico, withconso
                 print(command)
 
             start = time.time()
-            subprocess.run(command.split(' '), shell=True)
+            subprocess.run(command.split(' '), shell=True, check=True)
             end = time.time()
             if dev:
                 print(f"{end-start}s 사용됨")
@@ -51,7 +51,7 @@ def package(main, company_name, product_version, deploy_dir_name, ico, withconso
                 print(command)
 
             start = time.time()
-            subprocess.run(command.split(' '), shell=True)
+            subprocess.run(command.split(' '), shell=True, check=True)
             end = time.time()
             if dev:
                 print(f"{end - start}s 사용됨")
