@@ -29,4 +29,4 @@ Mac:
 
 ## 📝 License
 
-Distributed under the GPLv3 License. See [LICENSE](LICENSE.md) for more information.
+Distributed under the GPLv3 License. See [LICENSE](LICENSE) for more information.
