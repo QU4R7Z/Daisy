@@ -14,17 +14,17 @@
 
 Linux:
 ```
-<comando_de_instalação>
+
 ```
 
 Windows:
 ```
-<comando_de_instalação>
+
 ```
 
 Mac:
 ```
-<comando_de_instalação>
+
 ```
 
 ## 📝 License
