@@ -144,9 +144,9 @@ class MainWindow(QMainWindow):
 
         # PRINT MOUSE EVENTS
         if event.buttons() == Qt.LeftButton:
-            print('Mouse click: LEFT CLICK')
+            print('Mouse click: 0')
         if event.buttons() == Qt.RightButton:
-            print('Mouse click: RIGHT CLICK')
+            print('Mouse click: 1')
 
 
 if __name__ == "__main__":
