@@ -7,7 +7,7 @@ import webbrowser
 from modules import *
 from widgets import *
 
-os.environ["QT_FONT_DPI"] = "96"  # FIX Problem for High DPI and Scale above 100%
+os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"  
 
 # SET AS GLOBAL WIDGETS
 # ///////////////////////////////////////////////////////////////
